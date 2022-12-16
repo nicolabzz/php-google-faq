@@ -12,12 +12,11 @@ header {
   background-color: white;
 }
 
-.container {
-  /* border: 2px solid orange; */
-}
 
+/* ====================
+header LOGO and ACCOUNT
+==================== */
 .section1 {
-  border: 2px solid purple;
   height: 50px;
   display: flex;
   justify-content: space-between;
@@ -26,12 +25,10 @@ header {
 }
 
 .logo {
-  /* border: 2px solid green; */
   width: 250px;
 }
 
 .account {
-  /* border: 2px solid blue; */
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -56,12 +53,54 @@ img {
   width: 100%;
 }
 
-
+/* ====================
+    header NAV LINKS
+==================== */
 .section2 {
-  border: 2px solid magenta;
   height: 50px;
+  border-bottom: 1px solid rgba(151,151,151,.5);
+  box-sizing: border-box;
+  padding: 0 0 0 20px;
   width: 100%;
+  display: flex;
+  align-items: center;
 }
+
+.navbar {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 1.43;
+  margin: 0 42px 0 0;
+  height: 100%;
+}
+
+li a {
+  color: #5f6368;
+}
+
+li:nth-child(5) {
+  color:#3367D6;
+  border-bottom: 3px solid #3367D6;
+  border-radius: 2px;
+}
+
+li:nth-child(5) > a {
+  color:#3367D6;
+}
+
+
+
+
 
 /* ====================
         MAIN

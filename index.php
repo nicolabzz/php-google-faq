@@ -6,14 +6,16 @@ Gestire il “Database” e la visualizzazione di queste domande e risposte con 
 -->
 
 <?php
+
 //Database
 $arrLinks = [
-  '<div class="link1"><a href="">Introduzione</a></div>',
-  '<div class="link2"><a href="">Norme sulla privacy</a></div>',
-  '<div class="link3"><a href="">Termini di servizio</a></div>',
-  '<div class="link4"><a href="">Tecnologie</a></div>',
-  '<div class="link5"><a href="">Domande frequenti</a></div>'
+  '<li class="link link1"><a href="https://policies.google.com/">Introduzione</a></li>',
+  '<li class="link link2"><a href="https://policies.google.com/privacy">Norme sulla privacy</a></li>',
+  '<li class="link link3"><a href="https://policies.google.com/terms">Termini di servizio</a></li>',
+  '<li class="link link4"><a href="https://policies.google.com/technologies">Tecnologie</a></li>',
+  '<li class="link link5"><a href="https://policies.google.com/faq">Domande frequenti</a></li>'
 ];
+
 $arrGFAQ = [
   [
     // QUESTION
@@ -164,6 +166,7 @@ $arrGFAQ = [
   ],
 ];
 // end Database
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -205,15 +208,13 @@ $arrGFAQ = [
       </div>
 
       <div class="section2">
-        <div class="navbar">
-          <nav>
+        <ul class="navbar">
             <?php
             for ($i = 0; $i < count($arrLinks); $i++) {
-              echo $i;
+              echo $arrLinks[$i];
             }
             ?>
-          </nav>
-        </div>
+        </ul>
       </div>
 
     </div>
