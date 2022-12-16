@@ -107,7 +107,7 @@ li:nth-child(5) > a {
 ==================== */
 main {
   padding: 1rem 200px;
-  margin: 100px 0 0 0;
+  margin: 100px auto;
 }
 
 h2 {
